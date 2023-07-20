@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+    /* Estilo para tornar o iframe responsivo em dispositivos móveis */
+    .iframe-container {
+      position: relative;
+      width: 100%;
+      padding-bottom: 56.25%; /* Proporção de 16:9 (altere conforme a proporção do iframe) */
+      height: 0;
+    }
+
+    .iframe-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    /* Media query para dispositivos com largura menor ou igual a 768 pixels (por exemplo, tablets e smartphones) */
+    @media (max-width: 768px) {
+      .iframe-container {
+        padding-bottom: 100%; /* Proporção de 4:3 ou outra proporção adequada para dispositivos móveis */
+      }
+    }
+  </style>
+      <div class="iframe-container">
+    <iframe src="https://playpix.com/affiliates/?btag=1271608_l201868" frameborder="0" scrolling="auto"></iframe>
+    </div>
+</body>
+</html>
